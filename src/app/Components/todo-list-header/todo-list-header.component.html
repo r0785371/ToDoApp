@@ -1,0 +1,11 @@
+<header class="header">
+  <h1>Todos lijst</h1>
+  <!-- wanneer enter key wordt gedrukt wordt methode uitgevoerd -->
+  <input
+    class="new-todo"
+    placeholder="Voeg een ToDo bij"
+    autofocus=""
+    [(ngModel)]="newTodo.title"
+    (keyup.enter)="addTodo()"
+  />
+</header>

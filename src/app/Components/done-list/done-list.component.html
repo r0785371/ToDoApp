@@ -1,0 +1,19 @@
+<h2>Todos die klaar zijn</h2>
+
+<ng-container *ngIf="todos.length > 0">
+  <ul *ngFor="let todo of todos" [class.completed]="todo.complete">
+    <li>{{ todo.titel }}</li>
+  </ul>
+</ng-container>
+<!-- <section class="main" *ngIf="todos.length > 0">
+  <ul class="done-list">
+    <li *ngFor="let todo of todos" [class.completed]="todo.complete">
+      <app-done-list
+        [todo]="todo"
+        (toggleComplete)="onToggleTodoComplete($event)"
+        (remove)="onRemoveTodo($event)"
+      ></app-done-list>
+    </li>
+  </ul>
+</section>
+ -->
